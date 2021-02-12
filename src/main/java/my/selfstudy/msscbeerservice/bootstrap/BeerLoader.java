@@ -1,13 +1,16 @@
 package my.selfstudy.msscbeerservice.bootstrap;
 
+import lombok.RequiredArgsConstructor;
 import my.selfstudy.msscbeerservice.domain.Beer;
 import my.selfstudy.msscbeerservice.repository.BeerRepository;
+import my.selfstudy.msscbeerservice.web.model.BeerStyleEnum;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 
-//@Component
+@Component
+@RequiredArgsConstructor
 public class BeerLoader implements CommandLineRunner {
 
     public static final String BEER_1_UPC = "0631234200036";
@@ -16,21 +19,17 @@ public class BeerLoader implements CommandLineRunner {
 
     private final BeerRepository beerRepository;
 
-    public BeerLoader(BeerRepository beerRepository) {
-        this.beerRepository = beerRepository;
-    }
-
     @Override
     public void run(String... args) throws Exception {
         loadBeerObjects();
     }
 
     private void loadBeerObjects() {
-        if (beerRepository.count()==0) {
+        if (beerRepository.count() == 0) {
 
             beerRepository.save(Beer.builder()
                     .beerName("Mango Bobs")
-                    .beerStyle("IPA")
+                    .beerStyle(BeerStyleEnum.IPA.name())
                     .quantityToBrew(200)
                     .minOnHand(12)
                     .upc(BEER_1_UPC)
@@ -39,7 +38,7 @@ public class BeerLoader implements CommandLineRunner {
 
             beerRepository.save(Beer.builder()
                     .beerName("Galaxy Cat")
-                    .beerStyle("PALE_ALE")
+                    .beerStyle(BeerStyleEnum.PALE_ALE.name())
                     .quantityToBrew(200)
                     .minOnHand(12)
                     .upc(BEER_2_UPC)
@@ -47,8 +46,8 @@ public class BeerLoader implements CommandLineRunner {
                     .build());
 
             beerRepository.save(Beer.builder()
-                    .beerName("No Hammers On The Bar")
-                    .beerStyle("PALE_ALE")
+                    .beerName("Pinball Porter")
+                    .beerStyle(BeerStyleEnum.PORTER.name())
                     .quantityToBrew(200)
                     .minOnHand(12)
                     .upc(BEER_3_UPC)
