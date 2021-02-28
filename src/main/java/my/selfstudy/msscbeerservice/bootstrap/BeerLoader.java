@@ -3,7 +3,7 @@ package my.selfstudy.msscbeerservice.bootstrap;
 import lombok.RequiredArgsConstructor;
 import my.selfstudy.msscbeerservice.domain.Beer;
 import my.selfstudy.msscbeerservice.repository.BeerRepository;
-import my.selfstudy.msscbeerservice.web.model.BeerStyleEnum;
+import common.model.BeerStyleEnum;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

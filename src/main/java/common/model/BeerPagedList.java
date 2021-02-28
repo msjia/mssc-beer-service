@@ -1,4 +1,4 @@
-package my.selfstudy.msscbeerservice.web.model;
+package common.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

@@ -1,7 +1,7 @@
-package my.selfstudy.msscbeerservice.events;
+package common.model.events;
 
 import lombok.NoArgsConstructor;
-import my.selfstudy.msscbeerservice.web.model.BeerDto;
+import common.model.BeerDto;
 
 @NoArgsConstructor
 public class NewInventoryEvent extends BeerEvent {

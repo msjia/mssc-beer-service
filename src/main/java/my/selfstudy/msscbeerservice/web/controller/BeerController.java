@@ -2,9 +2,9 @@ package my.selfstudy.msscbeerservice.web.controller;
 
 import lombok.RequiredArgsConstructor;
 import my.selfstudy.msscbeerservice.services.BeerService;
-import my.selfstudy.msscbeerservice.web.model.BeerDto;
-import my.selfstudy.msscbeerservice.web.model.BeerPagedList;
-import my.selfstudy.msscbeerservice.web.model.BeerStyleEnum;
+import common.model.BeerDto;
+import common.model.BeerPagedList;
+import common.model.BeerStyleEnum;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

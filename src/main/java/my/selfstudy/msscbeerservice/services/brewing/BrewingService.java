@@ -4,7 +4,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import my.selfstudy.msscbeerservice.config.JmsConfig;
 import my.selfstudy.msscbeerservice.domain.Beer;
-import my.selfstudy.msscbeerservice.events.BrewBeerEvent;
+import common.model.events.BrewBeerEvent;
 import my.selfstudy.msscbeerservice.repository.BeerRepository;
 import my.selfstudy.msscbeerservice.services.inventory.BeerInventoryService;
 import my.selfstudy.msscbeerservice.web.mappers.BeerMapper;

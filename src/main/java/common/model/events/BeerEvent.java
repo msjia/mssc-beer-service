@@ -1,10 +1,10 @@
-package my.selfstudy.msscbeerservice.events;
+package common.model.events;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import my.selfstudy.msscbeerservice.web.model.BeerDto;
+import common.model.BeerDto;
 
 import java.io.Serializable;
 

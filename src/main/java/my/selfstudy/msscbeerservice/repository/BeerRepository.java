@@ -1,7 +1,7 @@
 package my.selfstudy.msscbeerservice.repository;
 
 import my.selfstudy.msscbeerservice.domain.Beer;
-import my.selfstudy.msscbeerservice.web.model.BeerStyleEnum;
+import common.model.BeerStyleEnum;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.jpa.repository.JpaRepository;

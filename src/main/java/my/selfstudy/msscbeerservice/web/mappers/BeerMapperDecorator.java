@@ -2,7 +2,7 @@ package my.selfstudy.msscbeerservice.web.mappers;
 
 import my.selfstudy.msscbeerservice.domain.Beer;
 import my.selfstudy.msscbeerservice.services.inventory.BeerInventoryService;
-import my.selfstudy.msscbeerservice.web.model.BeerDto;
+import common.model.BeerDto;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
